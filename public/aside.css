@@ -1,0 +1,47 @@
+.aside {
+	position: relative;
+	display: inline-block;
+	background: #3498DB;
+	min-height: 100vh;
+	min-width: var(--aside-width);
+	z-index: 1000;
+}
+.toggle-nav__wrapper {
+	padding: 0 15px;
+}
+.toggle-nav {
+	display: none;
+}
+@media (max-width: 767.98px) {
+	.aside {
+		display: none;
+		position: fixed;
+	}
+	.toggle-nav {
+		display: block;
+	}
+}
+.aside-show {
+	display: block;
+}
+ul {
+	padding: 120px 0 0;
+	margin: 0;
+}
+ul li {
+	list-style-type: none;
+	padding: 15px 0;
+	font-size: 18px;
+}
+li a {
+	color: #EBEDEF;
+	text-decoration: none;
+}
+.nav {
+	position: fixed;
+	text-align: center;
+	min-width: var(--aside-width);
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
